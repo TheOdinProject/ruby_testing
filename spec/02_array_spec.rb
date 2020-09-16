@@ -10,32 +10,33 @@ describe Array do
   # implicit subjects.
 
   context 'when subject is implicitly defined' do
-    # Type matchers:
+    # Type matchers can use be_a or be_an to increase readability.
     # https://relishapp.com/rspec/rspec-expectations/v/3-9/docs/built-in-matchers/type-matchers
     it 'is an Array' do
-      expect(subject).to be_a(Array)
-      # we can also use be_an to be more readable where relevant
       expect(subject).to be_an(Array)
     end
+    
     # Below is one-line syntax that does the same as the above test.
     # Look at the doc string that is auto-generated when this test is run
     # (in a terminal window).
-    it { is_expected.to be_a(Array) }
     it { is_expected.to be_an(Array) }
   end
 
   context 'when using predicate matchers' do
-    # A predicate method in Ruby is one which ends with a ? and only returns true or false. RSpec can leverage this to create predicate matchers for any predicate method
-    # https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/predicate-matchers
+    # A predicate method in Ruby ends with a ? and only returns true or false. 
     it 'is empty' do
       expect(subject.empty?).to eq true
-      # could be written instead as
+    end
+    
+    # RSpec can leverage this to create predicate matchers for any predicate method.
+    # https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/predicate-matchers
+    it 'is empty' do
       expect(subject).to be_empty
     end
+    
     # Below is one-line syntax that does the same as the above test.
     # Look at the doc string that is auto-generated when this test is run
     # (in a terminal window).
-
     it { is_expected.to be_empty }
   end
 
