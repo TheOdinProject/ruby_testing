@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
 describe String do
-  # The let method is passed a block that computes the value of the variable.
-  # It will only be called when the variable is needed.
-  # This is known as lazy loading.
+  # Let creates a helper method with a memoized value that is cached for the
+  # same example but not across different examples. Let is lazy-evaluated;
+  # it is not evaluated until the first time the method it defines is invoked.
+  # https://medium.com/@tomkadwill/all-about-rspec-let-a3b642e08d39
+
   let(:favorite_color) { String.new('blue') }
 
   # Use a context block to make your tests clear and well organized.
@@ -17,14 +19,17 @@ describe String do
     end
   end
 
-  context 'when the value of a let variable changes inside an example' do
-    it 'is the updated value of the let variable' do
-      favorite_color = 'navy blue'
-      expect(favorite_color).to eq('navy blue')
-    end
+  context 'when the let variable is overriden' do
+    let(:favorite_color) { String.new('green') }
 
-    # Let variables reset between examples.
-    it 'is the value of assigned let variable' do
+    it 'is the updated value of the let variable' do
+      expect(favorite_color).to eq('green')
+    end
+  end
+
+  # Let variables reset between examples.
+  context 'when the overriden value is out of scope' do
+    it 'is the value of original let variable' do
       expect(favorite_color).to eq('blue')
     end
   end
@@ -42,9 +47,9 @@ describe String do
 
   # remove the 'x' before running this test
   context 'when favorite food is updated' do
-    xit 'updates the favorite food' do
-      # Change the favorite_food let variable.
+    # Change the favorite_food let variable.
 
+    xit 'updates the favorite food' do
       # Write a test that will pass.
     end
   end
