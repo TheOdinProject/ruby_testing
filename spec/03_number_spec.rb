@@ -11,6 +11,10 @@ class SingleDigit
 end
 
 describe SingleDigit do
+  # There are differences between let and subject that you can research.
+  # In general, the subject is used to declare the test subject.
+  # https://stackoverflow.com/questions/38437162/whats-the-difference-between-rspecs-subject-and-let-when-should-they-be-used
+
   # It is recommended to explicitly define the subject with a descriptive name.
   # Then use the descriptive name, instead of 'subject,' in the tests.
   # https://relishapp.com/rspec/rspec-core/docs/subject/explicit-subject

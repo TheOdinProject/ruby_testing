@@ -4,7 +4,7 @@
 # item in 'numbers'.
 
 describe Array do
-  let(:numbers) { [11, 17, 21] }
+  subject(:numbers) { [11, 17, 21] }
 
   it 'is all odd numbers' do
     expect(numbers).to all(be_odd)
@@ -21,7 +21,7 @@ describe Array do
 end
 
 describe String do
-  let(:sample_word) { 'spaceship' }
+  subject(:sample_word) { 'spaceship' }
 
   context 'when using start_with' do
     it 'starts with s' do
@@ -61,7 +61,7 @@ describe String do
 end
 
 describe Array do
-  let(:symbol_array) { %i[a b c d e] }
+  subject(:symbol_array) { %i[a b c d e] }
 
   it 'starts with a and ends with e' do
     expect(symbol_array).to start_with(:a).and end_with(:e)
@@ -75,7 +75,7 @@ end
 # ASSIGNMENT
 
 describe Array do
-  let(:fibonacci_sequence) { [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89] }
+  subject(:fibonacci_sequence) { [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89] }
   # Write a test that expresses each of the following statements.
 
   # remove the 'x' before running this test

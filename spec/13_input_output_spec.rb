@@ -38,9 +38,9 @@ describe NumberGame do
         expect(solution).to be >= 0
       end
 
-      it 'is a number greater than 9' do
+      it 'is a number less than or equal to 9' do
         solution = game.solution
-        expect(solution).to be < 10
+        expect(solution).to be <= 9
       end
 
       # ASSIGNMENT #1
