@@ -21,7 +21,7 @@ describe Hash do
 
   # Use the 'be' matcher when testing for true or false values.
   context 'when testing for true or false values' do
-    let(:car_features) do
+    subject(:car_features) do
       {
         remote_start?: true,
         parking_camera?: true,
