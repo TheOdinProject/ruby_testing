@@ -138,16 +138,16 @@ describe NumberGame do
     end
 
     context 'when user inputs an incorrect value once, then a valid input' do
-      # A method stub can be called multiple times and return different values.
-      # https://relishapp.com/rspec/rspec-mocks/docs/configuring-responses/returning-a-value
-      # Create a stub method to receive :player_input and return the invalid
-      # 'letter' input, then the 'valid_input'
-
       # As the 'Arrange' step for tests grows, you can use a before hook to
       # separate the test from the set-up.
       # https://relishapp.com/rspec/rspec-core/v/2-0/docs/hooks/before-and-after-hooks\
       # https://www.tutorialspoint.com/rspec/rspec_hooks.htm
+
       before do
+        # A method stub can be called multiple times and return different values.
+        # https://relishapp.com/rspec/rspec-mocks/docs/configuring-responses/returning-a-value
+        # This method stub for :player_input will return the invalid 'letter' input,
+        # then it will return the 'valid_input'
         letter = 'd'
         valid_input = '8'
         allow(game_loop).to receive(:player_input).and_return(letter, valid_input)
