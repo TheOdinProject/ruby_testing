@@ -124,7 +124,7 @@ describe NumberGame do
   describe '#player_turn' do
     # In order to test the behavior of #player_turn, we need to use a method
     # stub for #player_input to return a valid_input ('3'). To stub a method,
-    # we 'allow' the test subject (player_game) to receive the :method_name
+    # we 'allow' the test subject (game_loop) to receive the :method_name
     # and to return a specific value.
     # https://relishapp.com/rspec/rspec-mocks/v/2-14/docs/method-stubs/allow-with-a-simple-return-value
     # http://testing-for-beginners.rubymonstas.org/test_doubles.html
