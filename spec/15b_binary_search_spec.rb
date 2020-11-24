@@ -8,7 +8,7 @@ require_relative '../lib/15c_random_number'
 # 1. Familarize yourself with the three lib/15 files.
 #    - lib/15a_binary_game
 #    - lib/15b_binary_search which is based on 14_find_number
-#    - lib/15c_random_numer
+#    - lib/15c_random_number
 # 2. Look at spec/15b_binary_search_spec which is based on 14_find_number_spec
 # 3. Complete spec/15a_binary_game_spec
 
