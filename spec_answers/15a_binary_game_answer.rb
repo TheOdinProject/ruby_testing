@@ -410,7 +410,7 @@ describe BinaryGame do
     # Only contains puts statements -> No test necessary & can be private.
   end
 
-  describe '#display_range' do
+  describe '#display_guess' do
     # Located inside #display_turn_order (Looping Script Method)
     # Only contains puts statements -> No test necessary & can be private.
   end
