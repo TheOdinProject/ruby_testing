@@ -23,9 +23,11 @@ describe Array do
   end
 
   context 'when using predicate matchers' do
-    # A predicate method in Ruby ends with a ? and only returns true or false. 
-    it 'is empty' do
-      expect(subject.empty?).to eq true
+    context 'when using the empty? predicate method' do
+      # A predicate method in Ruby ends with a ? and only returns true or false. 
+      it 'returns true' do
+        expect(subject.empty?).to eq true
+      end
     end
     
     # RSpec can leverage this to create predicate matchers for any predicate method.
