@@ -2,7 +2,7 @@
 
 # The file order to complete this lesson:
 
-# 1. Familarize yourself with the three lib/15 files.
+# 1. Familiarize yourself with the three lib/11 files.
 #    - lib/11a_pet.rb is the parent 'Pet' class of 'Cat' and 'Dog'
 #    - lib/11b_cat.rb is a subclass 'Cat'
 #    - lib/11c_dog.rb is a subclass 'Dog'
