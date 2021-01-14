@@ -49,7 +49,7 @@ describe MagicSeven do
       # nine to the random_number.
       result = game.add_nine(random_number)
 
-      # For the 'Assert' step, we know exactly we expect the result to be:
+      # For the 'Assert' step, we know exactly what we expect the result to be:
       expect(result).to eq(15)
     end
   end
