@@ -107,11 +107,11 @@ describe MagicSeven do
   # positive integer as the random_number. Update the context with the number.
   describe '#play' do
     context 'when the random number is 19' do
-      subject(:game_ninteen) { described_class.new(19) }
+      subject(:game_nineteen) { described_class.new(19) }
 
       # remove the 'x' before running this test
       it 'will always return 7' do
-        result = game_ninteen.play
+        result = game_nineteen.play
         expect(result).to eq(7)
       end
     end
