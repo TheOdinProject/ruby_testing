@@ -12,7 +12,9 @@ These lessons cover many topics, but it does not cover everything that RSpec is 
 - Test Driven Development
 
 ## Set-Up
-To install RSpec, run `bundle install` from the root directory of this project.
+Run `rbenv versions` to confirm that you have ruby version 2.7.4 installed. If you do not have this version installed, please refer back to these [instructions](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/installing-ruby-ruby-programming) to install it.
+
+Run `bundle install` from the root directory.
 
 ## How to use this playground
 These lessons are numbered 01 - 16, in the **spec** folder. Start with the file: <code>spec/01_string_spec.rb</code>. The first 9 lessons are self-contained in the spec file. Starting with lesson 10, there will be 1-3 corresponding files in the <code>lib</code> folder.
