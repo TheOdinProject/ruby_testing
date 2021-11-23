@@ -81,7 +81,7 @@ describe MagicSeven do
   end
 
   # The #play method will always return seven! Test this game, using any
-  # positive integer as the random_number. Update the context with the number.
+  # integer as the random_number. Update the context with the number.
   describe '#play' do
     context 'when the random number is ...' do
       # remove the 'x' before running this test
