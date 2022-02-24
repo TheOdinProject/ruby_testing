@@ -185,7 +185,7 @@ describe BinaryGame do
     context 'when updating value of random number' do
       # Instead of using a normal double, as we did in TDD, we are going to
       # use an instance_double. An instance_double is a verifying double that
-      # will produce an error if any methods being stubbed does not exist in
+      # will produce an error if any methods being stubbed do not exist in
       # the actual class. In this way, using a verifying double makes a test
       # more stable.
       # https://relishapp.com/rspec/rspec-mocks/v/3-9/docs/verifying-doubles
