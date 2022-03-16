@@ -17,9 +17,9 @@ require_relative '../lib/15c_random_number'
 # has been renamed to BinarySearch, which is a more accurate description.
 
 # After you have completed your TDD, the classes and methods that were used
-# as a test double should be updated to be a verifying double. Using a
-# verifying double is preferred, because doubles can produce an error if
-# they do not exist in the actual class. Therefore using a verifying double
+# as a verifying double should be updated to be a test double. Using a
+# test double is preferred, because verifying double can produce an error if
+# they do not exist in the actual class. Therefore using a test double
 # makes a test more stable.
 # https://relishapp.com/rspec/rspec-mocks/v/3-9/docs/verifying-doubles
 
