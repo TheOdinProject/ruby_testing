@@ -184,18 +184,20 @@ describe BinaryGame do
 
     context 'when updating value of random number' do
       # Instead of using a normal double, as we did in TDD, we are going to
-      # use an instance_double. An instance_double is a verifying double that
-      # will produce an error if any methods being stubbed does not exist in
-      # the actual class. In this way, using a verifying double makes a test
-      # more stable.
+      # use an instance_double. Differently from the normal test double we've 
+      # been using so far, a verifying double can produce an error if the method 
+      # being stubbed do not exist in the actual class. Verifying doubles are a 
+      # great tool to use when you're doing integration testing and need to make
+      # sure that different classes work together in order to fulfill some bigger
+      # computation.
       # https://relishapp.com/rspec/rspec-mocks/v/3-9/docs/verifying-doubles
 
-      # Unit testing relies on using doubles to test the object in isolation
-      # (i.e., not dependent on any other object). One important concept to
-      # understand is that the BinaryGame or FindNumber class doesn't care if it
-      # is given an actual random_number class object. It only cares that it is
-      # given an object that can respond to certain methods. This concept is
-      # called polymorphism.
+      # You should not use verifying doubles for unit testings. Unit testing relies 
+      # on using doubles to test the object in isolation (i.e., not dependent on any
+      # other object). One important concept to understand is that the BinarySearch 
+      # or FindNumber class doesn't care if it is given an actual random_number class
+      # object. It only cares that it is given an object that can respond to certain 
+      # methods. This concept is called polymorphism.
       # https://www.geeksforgeeks.org/polymorphism-in-ruby/
 
       # Below (commented out) is the previous normal 'random_number' object
