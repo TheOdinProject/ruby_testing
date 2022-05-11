@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 describe String do
-  # Let creates a helper method with a memoized value that is cached for the
+  # Let creates a helper method with a memorized value that is cached for the
   # same example but not across different examples. Let is lazy-evaluated;
   # it is not evaluated until the first time the method it defines is invoked.
   # https://medium.com/@tomkadwill/all-about-rspec-let-a3b642e08d39
