@@ -19,7 +19,7 @@ describe String do
     end
   end
 
-  context 'when the let variable is overriden' do
+  context 'when the let variable is overridden' do
     let(:favorite_color) { String.new('green') }
 
     it 'is the updated value of the let variable' do
