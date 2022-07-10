@@ -28,7 +28,7 @@ describe String do
   end
 
   # Let variables reset between examples.
-  context 'when the overriden value is out of scope' do
+  context 'when the overridden value is out of scope' do
     it 'is the value of original let variable' do
       expect(favorite_color).to eq('blue')
     end
