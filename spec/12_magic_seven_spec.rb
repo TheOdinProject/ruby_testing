@@ -26,7 +26,7 @@ require_relative '../lib/12_magic_seven'
 # directories) by adding a .rubocop.yml file.
 # https://docs.rubocop.org/rubocop/0.88/configuration.html#includingexcluding-files
 
-# When you start working on a existing code base, you will often become familiar
+# When you start working on an existing code base, you will often become familiar
 # with the code by reading the tests.
 
 describe MagicSeven do
