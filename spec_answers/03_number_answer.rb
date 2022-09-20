@@ -2,7 +2,7 @@
 
 describe Array do
   context 'when my_array has perfect values' do
-    # Write a let variable 'my_array' that passes all tests.
+    # Write a subject variable 'my_array' that passes all tests.
     let(:my_array) { [-7, 42, 101, 98] }
 
     # remove the 'x' before running this test
