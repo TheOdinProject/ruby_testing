@@ -61,7 +61,7 @@ end
 
 describe Array do
   context 'when my_array has perfect values' do
-    # Write a let variable 'my_array' that passes all tests.
+    # Write a subject variable 'my_array' that passes all tests.
 
     # remove the 'x' before running this test
     xit 'has a specific first value' do
