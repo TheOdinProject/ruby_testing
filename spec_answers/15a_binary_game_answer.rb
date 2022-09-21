@@ -44,10 +44,10 @@ require_relative '../lib/15c_random_number'
 # method should be tested. For the games that we are making, script and looping
 # script methods are just a convenient way to call the methods needed to play a
 # full game. Since these methods are required to play the game, they should be
-# publicly tested methods (even if you previously made them private). Pretend
+# tested and made public (even if you previously made them private). Pretend
 # that someone will be using your class to make their own game with customized
-# text. Any method that they would need in their game should be a publicly
-# tested method.
+# text. Any method that they would need in their game should be part of the
+# public interface and have test coverage.
 
 # 3. Any method that sends a command message to another class should always test
 # that those messages were sent.
