@@ -51,7 +51,7 @@ describe NumberGame do
         match { |number| number.between?(0, 9) }
       end
 
-      # remove the 'x' before running this test
+      
       it 'is a number between 0 and 9' do
         solution = game.solution
         expect(solution).to be_between_zero_and_nine
@@ -83,7 +83,7 @@ describe NumberGame do
     context 'when user guess is not correct' do
       subject(:game_mid) { described_class.new(5, '2') }
 
-      # remove the 'x' before running this test
+      
       it 'is not game over' do
         expect(game_mid).to_not be_game_over
       end
@@ -217,7 +217,7 @@ describe NumberGame do
     context 'when count is 2-3' do
       subject(:game_three) { described_class.new(5, '5', 3) }
 
-      # remove the 'x' before running this test
+      
       it 'outputs correct phrase' do
         congrats_phrase = "Congratulations! You picked the random number in 3 guesses!\n"
         expect { game_three.final_message }.to output(congrats_phrase).to_stdout
@@ -230,7 +230,7 @@ describe NumberGame do
     context 'when count is 4 and over' do
       subject(:game_seven) { described_class.new(5, '5', 7) }
 
-      # remove the 'x' before running this test
+      
       it 'outputs correct phrase' do
         hard_phrase = "That was hard. It took you 7 guesses!\n"
         expect { game_seven.final_message }.to output(hard_phrase).to_stdout
