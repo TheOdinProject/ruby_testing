@@ -9,12 +9,10 @@ describe Drink do
       # beverage type.
       subject(:tea_drink) { described_class.new('tea') }
 
-      
       it 'is tea' do
         expect(tea_drink.type).to eq('tea')
       end
 
-      
       it 'has 16 ounces' do
         expect(tea_drink.ounces).to eq(16)
       end
@@ -27,7 +25,6 @@ describe Drink do
       # beverage type.
       subject(:default_drink) { described_class.new }
 
-      
       it 'is full' do
         expect(default_drink).to be_full
       end
@@ -38,7 +35,6 @@ describe Drink do
       # beverage type. In addition, specify ounces to be any number under 16.
       subject(:juice_drink) { described_class.new('juice', 8) }
 
-      
       it 'is not full' do
         expect(juice_drink).to_not be_full
       end
