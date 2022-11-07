@@ -33,12 +33,10 @@ describe Cat do
     include_examples 'shared method name'
   end
 
-  # remove the 'x' before running this test
   it 'is not hungry' do
     expect(lucy).to_not be_hungry
   end
 
-  # remove the 'x' before running this test
   it 'is hiding' do
     expect(lucy).to be_hiding
   end
