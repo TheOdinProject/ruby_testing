@@ -167,7 +167,7 @@ describe BinaryGame do
   # Create a new instance of BinaryGame and write a test for the following two
   # context blocks.
   describe '#verify_input' do
-    # Located inside #play_game (Looping Script Method)
+    # Located inside #player_input (Looping Script Method)
     # Query Method -> Test the return value
 
     # NOTE: #verify_input will only return a number if it is between?(min, max)
