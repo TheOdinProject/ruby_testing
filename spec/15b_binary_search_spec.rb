@@ -18,7 +18,7 @@ require_relative '../lib/15c_random_number'
 
 # This spec file uses verifying doubles to help you get acquaintance with the
 # concept. Differently from the normal test double we've been using so far, 
-# a verifying double can produce an error if the method being stubbed do not
+# a verifying double can produce an error if the method being stubbed does not
 # exist in the actual class. Verifying doubles are a great tool to use when 
 # you're doing integration testing and need to make sure that different classes 
 # work together in order to fulfill some bigger computation.

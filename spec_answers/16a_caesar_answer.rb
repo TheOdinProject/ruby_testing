@@ -39,6 +39,7 @@ describe CaesarBreaker do
 
   # Write a test for the following method.
   describe '#create_decrypted_messages' do
+    # This is a Looping Script Method.
     # Located inside #decrypt (Public Script Method)
 
     # Method with Outgoing Command -> Test that a message is sent
