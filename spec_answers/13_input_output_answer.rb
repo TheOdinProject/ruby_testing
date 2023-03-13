@@ -124,7 +124,7 @@ describe NumberGame do
     # stub for #player_input to return a valid_input ('3'). To stub a method,
     # we 'allow' the test subject (game_loop) to receive the :method_name
     # and to return a specific value.
-    # https://relishapp.com/rspec/rspec-mocks/v/2-14/docs/method-stubs/allow-with-a-simple-return-value
+    # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-mocks/v/2-14/docs/method-stubs/allow-with-a-simple-return-value
     # http://testing-for-beginners.rubymonstas.org/test_doubles.html
 
     subject(:game_loop) { described_class.new }
@@ -133,7 +133,7 @@ describe NumberGame do
       # To test the behavior, we want to test that the loop stops before the
       # puts 'Input error!' line. In order to test that this method is not
       # called, we use a message expectation.
-      # https://relishapp.com/rspec/rspec-mocks/docs
+      # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-mocks/docs
 
       it 'stops loop and does not display error message' do
         valid_input = '3'
@@ -146,13 +146,13 @@ describe NumberGame do
 
     context 'when user inputs an incorrect value once, then a valid input' do
       # A method stub can be called multiple times and return different values.
-      # https://relishapp.com/rspec/rspec-mocks/docs/configuring-responses/returning-a-value
+      # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-mocks/docs/configuring-responses/returning-a-value
       # Create a stub method to receive :player_input and return the invalid
       # 'letter' input, then the 'valid_input'
 
       # As the 'Arrange' step for tests grows, you can use a before hook to
       # separate the test from the set-up.
-      # https://relishapp.com/rspec/rspec-core/v/2-0/docs/hooks/before-and-after-hooks\
+      # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-core/v/2-0/docs/hooks/before-and-after-hooks\
       # https://www.tutorialspoint.com/rspec/rspec_hooks.htm
       before do
         letter = 'd'
@@ -162,7 +162,7 @@ describe NumberGame do
 
       # When using message expectations, you can specify how many times you
       # expect the message to be received.
-      # https://relishapp.com/rspec/rspec-mocks/docs/setting-constraints/receive-counts
+      # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-mocks/docs/setting-constraints/receive-counts
       it 'completes loop and displays error message once' do
         expect(game_loop).to receive(:puts).with('Input error!').once
         game_loop.player_turn
@@ -193,7 +193,7 @@ describe NumberGame do
   # applications' don't even output like this except to loggers.
 
   # However, here is an example of how to test 'puts' using the output matcher.
-  # https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/output-matcher
+  # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/output-matcher
 
   describe '#final_message' do
     context 'when count is 1' do
