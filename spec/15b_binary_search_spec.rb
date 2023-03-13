@@ -22,7 +22,7 @@ require_relative '../lib/15c_random_number'
 # exist in the actual class. Verifying doubles are a great tool to use when 
 # you're doing integration testing and need to make sure that different classes 
 # work together in order to fulfill some bigger computation.
-# https://relishapp.com/rspec/rspec-mocks/v/3-9/docs/verifying-doubles
+# https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-mocks/v/3-9/docs/verifying-doubles
 
 # You should not use verifying doubles for unit testings. Unit testing relies 
 # on using doubles to test the object in isolation (i.e., not dependent on any
