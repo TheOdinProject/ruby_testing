@@ -359,8 +359,11 @@ describe BinaryGame do
 
   # Write three tests for the following method.
   describe '#display_turn_order' do
-    # This method is a Looping Script Method. In #display_binary_search,
-    # #display_turn_order will loop until binary_search.game_over?
+    # This method is both a Command Method and a Script Method. It changes the
+    # observable state by incrementing the instance variable @guess_count by one,
+    # sends two command messages #make_guess and #update_range to the object
+    # binary_search of class BinarySearch, and sends one command message to `self`
+    #  by calling #display_guess.
 
     # Create a new subject and an instance_double for BinarySearch.
 
