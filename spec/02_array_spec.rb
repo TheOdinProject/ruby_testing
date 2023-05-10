@@ -3,7 +3,7 @@
 describe Array do
   # An implicitly defined 'subject' is available when the outermost example
   # group is a class. The 'subject' will be an instance of that class.
-  # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-core/v/2-11/docs/subject/implicitly-defined-subject
+  # https://web.archive.org/web/20221204015051/https://relishapp.com/rspec/rspec-core/v/3-9/docs/subject/implicitly-defined-subject
 
   # Note: Using an implicit subject is not recommended for most situations.
   # The next lesson will cover explicit subjects, which are recommended over
