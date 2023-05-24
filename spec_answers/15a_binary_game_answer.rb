@@ -215,7 +215,7 @@ describe BinaryGame do
       # Instead of using a normal double, as we did in TDD, we are going to
       # use an instance_double. Differently from the normal test double we've
       # been using so far, a verifying double can produce an error if the method
-      # being stubbed do not exist in the actual class. Verifying doubles are a
+      # being stubbed does not exist in the actual class. Verifying doubles are a
       # great tool to use when you're doing integration testing and need to make
       # sure that different classes work together in order to fulfill some bigger
       # computation.
@@ -234,6 +234,7 @@ describe BinaryGame do
       # RandomNumber class.
       # let(:random_number) { double('random_number', value: 8) }
       let(:random_update) { instance_double(RandomNumber) }
+      let(:new_number) { 76 }
       subject(:game_update) { described_class.new(1, 100, random_update) }
 
       # To 'Arrange' this test, two methods will need to be stubbed, so that
@@ -245,12 +246,11 @@ describe BinaryGame do
 
       before do
         allow(game_update).to receive(:puts)
-        new_number = 76
         allow(game_update).to receive(:player_input).with(1, 100).and_return(new_number)
       end
 
       it 'sends update_value to random_number' do
-        expect(random_update).to receive(:update_value).with(76)
+        expect(random_update).to receive(:update_value).with(new_number)
         game_update.update_random_number
       end
     end
@@ -400,7 +400,8 @@ describe BinaryGame do
     # To test this fact, let's allow a method that is not called in
     # #display_turn_order. Uncomment the line at the bottom of this
     # paragraph, move it to the before hook, and run the tests.
-    # All of the tests should continue to pass.
+    # All of the tests should continue to pass. Replace 'binary_search_turn'
+    # with whatever you named your BinarySearch instance_double if necessary.
     # allow(binary_search_turn).to receive(:game_over?)
 
     # Now, in the lib/15a_binary_game.rb file, comment out either line,
