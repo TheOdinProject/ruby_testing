@@ -14,7 +14,7 @@ describe Dog do
   end
 
   context 'when dog has name and color, but no breed' do
-    # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-expectations/v/3-9/docs/built-in-matchers/have-attributes-matcher
+    # https://rspec.info/features/3-12/rspec-expectations/built-in-matchers/have-attributes/
     it 'has name, breed & color attributes' do
       expect(toby).to have_attributes(name: 'Toby', breed: nil, color: 'brown')
     end

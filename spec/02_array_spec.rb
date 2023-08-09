@@ -3,7 +3,7 @@
 describe Array do
   # An implicitly defined 'subject' is available when the outermost example
   # group is a class. The 'subject' will be an instance of that class.
-  # https://web.archive.org/web/20221204015051/https://relishapp.com/rspec/rspec-core/v/3-9/docs/subject/implicitly-defined-subject
+  # https://rspec.info/features/3-12/rspec-core/subject/implicit-subject/
 
   # Note: Using an implicit subject is not recommended for most situations.
   # The next lesson will cover explicit subjects, which are recommended over
@@ -11,7 +11,7 @@ describe Array do
 
   context 'when subject is implicitly defined' do
     # Type matchers can use be_a or be_an to increase readability.
-    # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-expectations/v/3-9/docs/built-in-matchers/type-matchers
+    # https://rspec.info/features/3-12/rspec-expectations/built-in-matchers/types/
     it 'is an Array' do
       expect(subject).to be_an(Array)
     end
@@ -31,7 +31,7 @@ describe Array do
     end
     
     # RSpec can leverage this to create predicate matchers for any predicate method.
-    # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/predicate-matchers
+    # https://rspec.info/features/3-12/rspec-expectations/built-in-matchers/predicates/
     it 'is empty' do
       expect(subject).to be_empty
     end
@@ -61,7 +61,7 @@ describe Array do
 
   # The answer is that each group runs its examples before running its nested
   # example groups, even if the nested groups are defined before the examples.
-  # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-core/v/3-9/docs/command-line/order
+  # https://rspec.info/features/3-12/rspec-core/command-line/order/
 
   # Please note: one-line tests are only recommended when the matcher aligns
   # exactly with the doc string. Even in that case, many rubyists prefer

@@ -21,7 +21,7 @@ require_relative '../lib/14_find_number'
 
 # Note: the 'RandomNumber' class has not been written. During TDD, we will need
 # to create a double for RandomNumber in the tests for FindNumber.
-# https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-mocks/v/3-9/docs/basics/test-doubles
+# https://rspec.info/features/3-12/rspec-mocks/basics/test-doubles/
 
 # Learning about doubles can be very confusing, because many resources use
 # doubles/mocks/stubs interchangeably. If you want to dig a little deeper,

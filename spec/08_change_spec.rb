@@ -12,7 +12,7 @@ describe Array do
 
   # When testing for a change to occur, notice that unlike previous matchers
   # we've seen, 'change' accepts a block of code.
-  # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/change-matcher
+  # https://rspec.info/features/3-12/rspec-expectations/built-in-matchers/change/
 
   context 'when testing for a change' do
     it 'will change the length to 4' do

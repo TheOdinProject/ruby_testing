@@ -14,7 +14,7 @@ describe Cat do
   end
 
   context 'when cat has name and breed, but no color' do
-    # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-expectations/v/3-9/docs/built-in-matchers/have-attributes-matcher
+    # https://rspec.info/features/3-12/rspec-expectations/built-in-matchers/have-attributes/
     it 'has name, breed & color attributes' do
       expect(oscar).to have_attributes(name: 'Oscar', breed: 'Maine Coon', color: nil)
     end

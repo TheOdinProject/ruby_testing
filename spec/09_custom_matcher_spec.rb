@@ -2,7 +2,7 @@
 
 # If you need to test a condition that does not have a built-in matcher,
 # you can create your own.
-# https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-expectations/v/3-9/docs/custom-matchers
+# https://rspec.info/features/3-12/rspec-expectations/custom-matchers/
 
 describe 'defining custom matchers' do
   context 'when reusing a matcher that is in scope' do

@@ -10,7 +10,7 @@
 # 3. Complete either spec/11b_cat_spec.rb or spec/11c_dog_spec.rb
 
 # Start with reading about the use of shared examples:
-# https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-core/docs/example-groups/shared-examples
+# https://rspec.info/features/3-12/rspec-core/example-groups/shared-examples/
 
 # These tests are dependent on using the implicit 'subject' when they are
 # included in another spec file. This file is not intended to be used alone.
@@ -20,7 +20,7 @@
 RSpec.shared_examples 'base class method name' do
   # This test can be used in Cat and Dog because the method comes from the
   # base class.
-  # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-expectations/v/3-9/docs/built-in-matchers/respond-to-matcher
+  # https://rspec.info/features/3-12/rspec-expectations/built-in-matchers/respond-to/
   context 'when method is from the base class' do
     it 'responds to meal_time' do
       expect(subject).to respond_to(:meal_time)

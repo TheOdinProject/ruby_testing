@@ -52,7 +52,7 @@ describe CaesarBreaker do
   # (The following methods are located in lib/16c_database.rb)
 
   # Some prefer explicitly including it in the configuration option.
-  # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-core/docs/helper-methods/define-helper-methods-in-a-module
+  # https://rspec.info/features/3-12/rspec-core/helper-methods/modules/
 
   # Some prefer testing modules using a dummy class.
   # https://mixandgo.com/learn/how-to-test-ruby-modules-with-rspec
@@ -109,7 +109,7 @@ describe CaesarBreaker do
 
     # This method has a rescue block in case an error occurs.
     # Let's test that this method can run without raising an error.
-    # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/raise-error-matcher
+    # https://rspec.info/features/3-12/rspec-expectations/built-in-matchers/raise-error/
 
     context 'when file is saved successfully' do
       before do

@@ -126,7 +126,7 @@ describe BinaryGame do
     # between the min & max integers) and one valid input number (as a string).
 
     # Remember that a stub can be called multiple times and return different values.
-    # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-mocks/docs/configuring-responses/returning-a-value
+    # https://rspec.info/features/3-12/rspec-mocks/configuring-responses/returning-a-value/
 
     context 'when user inputs an incorrect value once, then a valid input' do
       before do
@@ -190,7 +190,7 @@ describe BinaryGame do
       # great tool to use when you're doing integration testing and need to make
       # sure that different classes work together in order to fulfill some bigger
       # computation.
-      # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-mocks/v/3-9/docs/verifying-doubles
+      # https://rspec.info/features/3-12/rspec-mocks/verifying-doubles/
 
       # You should not use verifying doubles for unit testings. Unit testing relies 
       # on using doubles to test the object in isolation (i.e., not dependent on any
@@ -213,7 +213,7 @@ describe BinaryGame do
       # and will need to return the new_number. We are going to match the
       # literal arguments, but there are many ways to specify the arguments
       # using matching arguments:
-      # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-mocks/docs/setting-constraints/matching-arguments
+      # https://rspec.info/features/3-12/rspec-mocks/setting-constraints/matching-arguments/
 
       before do
         allow(game_update).to receive(:puts)
