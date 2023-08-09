@@ -5,7 +5,7 @@ describe Hash do
 
   # As you discovered in the last assignment, the include matcher works on any
   # object that would respond to the #include? method.
-  # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/include-matcher
+  # https://rspec.info/features/3-12/rspec-expectations/built-in-matchers/include/
   context 'when changing favorite color to forest green' do
     it 'includes green' do
       favorites[:color] = 'forest green'

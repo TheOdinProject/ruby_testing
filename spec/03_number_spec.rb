@@ -17,14 +17,14 @@ describe SingleDigit do
 
   # It is recommended to explicitly define the subject with a descriptive name.
   # Then use the descriptive name, instead of 'subject,' in the tests.
-  # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-core/docs/subject/explicit-subject
+  # https://rspec.info/features/3-12/rspec-core/subject/explicit-subject/
   subject(:random_digit) { SingleDigit.new }
 
   # There can be multiple tests in one example block; however, it is recommended
   # to test only one thing at a time.
   it 'is greater than or equal to 1' do
     # Comparison matchers are used with 'be' matcher
-    # https://web.archive.org/web/20230101143200/https://relishapp.com/rspec/rspec-expectations/v/3-9/docs/built-in-matchers/comparison-matchers
+    # https://rspec.info/features/3-12/rspec-expectations/built-in-matchers/comparisons/
     expect(random_digit.number).to be >= 1
   end
 
