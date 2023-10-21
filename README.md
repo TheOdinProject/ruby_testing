@@ -12,7 +12,7 @@ These lessons cover many topics, but it does not cover everything that RSpec is 
 - Test Driven Development
 
 ## Set-Up
-Run `rbenv versions` to confirm that you have ruby version 3.1.2 installed. If you do not have this version installed, please refer back to these [instructions](https://www.theodinproject.com/lessons/ruby-installing-ruby) to install it.
+Run `rbenv versions` to confirm that you have ruby version 3.2.2 installed. If you do not have this version installed, please refer back to these [instructions](https://www.theodinproject.com/lessons/ruby-installing-ruby) to install it.
 
 Run `bundle install` from the root directory.
 
