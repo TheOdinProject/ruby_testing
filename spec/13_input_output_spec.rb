@@ -3,7 +3,7 @@
 require_relative '../lib/13_input_output'
 
 # The file order to complete this lesson:
-# 1. Familarize yourself with the two classes in lib/13_input_output.rb
+# 1. Familiarize yourself with the two classes in lib/13_input_output.rb
 # 2. Complete spec/13_input_output_spec.rb
 
 # Ruby code that was written before you learned how to use RSpec may be nearly

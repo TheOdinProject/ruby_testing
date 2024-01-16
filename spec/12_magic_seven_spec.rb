@@ -3,7 +3,7 @@
 require_relative '../lib/12_magic_seven'
 
 # The file order to complete this lesson:
-# 1. Familarize yourself with the class in lib/12_magic_seven.rb
+# 1. Familiarize yourself with the class in lib/12_magic_seven.rb
 # 2. Complete spec/12_magic_seven_spec.rb
 
 # Before learning any more complexities of testing, let's take a look at a

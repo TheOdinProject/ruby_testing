@@ -5,7 +5,7 @@ require_relative '../lib/15c_random_number'
 
 # The file order to complete this lesson:
 
-# 1. Familarize yourself with the three lib/15 files.
+# 1. Familiarize yourself with the three lib/15 files.
 #    - lib/15a_binary_game
 #    - lib/15b_binary_search which is based on 14_find_number
 #    - lib/15c_random_number
