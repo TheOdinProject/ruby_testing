@@ -79,7 +79,7 @@ describe CaesarBreaker do
       # ASSIGNMENT #2
       # Write the following 3 tests:
 
-      xit 'sends message to check the existance of the 16_cipher directory' do
+      xit 'sends message to check the existence of the 16_cipher directory' do
       end
 
       xit 'sends message to create a directory' do
@@ -97,7 +97,7 @@ describe CaesarBreaker do
       before do
       end
 
-      xit 'sends message to check the existance of the 16_cipher directory' do
+      xit 'sends message to check the existence of the 16_cipher directory' do
       end
 
       xit 'does not send message to create a directory' do
@@ -124,7 +124,7 @@ describe CaesarBreaker do
       end
     end
 
-    # Let's simulate an error occuring during #save_decrypted_messages by
+    # Let's simulate an error occurring during #save_decrypted_messages by
     # allowing File.open to raise the error 'Errno::ENOENT'. This error means
     # that no such file or directory could be found. In addition, when an error
     # is rescued there are two puts to stub to clean up the test output.
