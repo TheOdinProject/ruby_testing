@@ -2,7 +2,7 @@
 
 # Do not use 'be_truthy' or 'be_falsy' for methods that should only be
 # evaluated into a Boolean.
-# https://eddyluten.com/rspec-be_truthy-exists-or-be-true
+# https://luten.dev/rspec-be_truthy-exists-or-be-true/
 
 describe 'truthy and falsy' do
   context 'almost everything is truthy' do
