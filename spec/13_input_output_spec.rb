@@ -119,6 +119,7 @@ describe NumberGame do
     # and to return a specific value.
     # https://rspec.info/features/3-12/rspec-mocks/basics/allowing-messages/
     # http://testing-for-beginners.rubymonstas.org/test_doubles.html
+    # https://edpackard.medium.com/the-no-problemo-basic-guide-to-doubles-and-stubs-in-rspec-1af3e13b158
 
     subject(:game_loop) { described_class.new }
 
