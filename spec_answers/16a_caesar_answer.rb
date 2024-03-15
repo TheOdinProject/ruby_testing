@@ -80,7 +80,7 @@ describe CaesarBreaker do
       # ASSIGNMENT #2
       # Write the following 3 tests:
 
-      it 'sends message to check the existance of the 16_cipher directory' do
+      it 'sends message to check the existence of the 16_cipher directory' do
         expect(Dir).to receive(:exist?).with('16_cipher').exactly(1).time
         phrase.save_decrypted_messages
       end
@@ -107,7 +107,7 @@ describe CaesarBreaker do
         allow(phrase).to receive(:display_file_location)
       end
 
-      it 'sends message to check the existance of the 16_cipher directory' do
+      it 'sends message to check the existence of the 16_cipher directory' do
         expect(Dir).to receive(:exist?).with('16_cipher').exactly(1).time
         phrase.save_decrypted_messages
       end
@@ -140,7 +140,7 @@ describe CaesarBreaker do
       end
     end
 
-    # Let's simulate an error occuring during #save_decrypted_messages by
+    # Let's simulate an error occurring during #save_decrypted_messages by
     # allowing File.open to raise the error 'Errno::ENOENT'. This error means
     # that no such file or directory could be found. In addition, when an error
     # is rescued there are two puts to stub to clean up the test output.
