@@ -19,7 +19,7 @@ require_relative '../lib/14_find_number'
 # lib/14_find_number.rb file. An instance of 'FindNumber' is initialized with
 # min, max, answer and guess. There are default values for answer and guess.
 
-# Note: the 'RandomNumber' class has not been written. During TDD, we will need
+# NOTE: the 'RandomNumber' class has not been written. During TDD, we will need
 # to create a double for RandomNumber in the tests for FindNumber.
 # https://rspec.info/features/3-12/rspec-mocks/basics/test-doubles/
 
