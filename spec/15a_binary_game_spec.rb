@@ -69,7 +69,7 @@ require_relative '../lib/15c_random_number'
 # will need to stub any inside methods because they will be called when you
 # create an instance of the class.
 
-# 2. You do not have to test methods that only contain 'puts' or 'gets' 
+# 2. You do not have to test methods that only contain 'puts' or 'gets'
 # because they are well-tested in the standard Ruby library.
 
 # 3. Private methods do not need to be tested because they should have test
@@ -96,7 +96,7 @@ describe BinaryGame do
     # Looping Script Method -> Test the behavior of the method (for example, it
     # stops when certain conditions are met).
 
-    # Note: #player_input will stop looping when the valid_input is between?(min, max)
+    # NOTE: #player_input will stop looping when the valid_input is between?(min, max)
 
     subject(:game_input) { described_class.new(1, 10) }
 
@@ -153,7 +153,7 @@ describe BinaryGame do
     # Located inside #player_input (Looping Script Method)
     # Query Method -> Test the return value
 
-    # Note: #verify_input will only return a number if it is between?(min, max)
+    # NOTE: #verify_input will only return a number if it is between?(min, max)
 
     context 'when given a valid input as argument' do
       xit 'returns valid input' do
@@ -184,19 +184,19 @@ describe BinaryGame do
 
     context 'when updating value of random number' do
       # Instead of using a normal double, as we did in TDD, we are going to
-      # use an instance_double. Differently from the normal test double we've 
-      # been using so far, a verifying double can produce an error if the method 
+      # use an instance_double. Differently from the normal test double we've
+      # been using so far, a verifying double can produce an error if the method
       # being stubbed does not exist in the actual class. Verifying doubles are a
       # great tool to use when you're doing integration testing and need to make
       # sure that different classes work together in order to fulfill some bigger
       # computation.
       # https://rspec.info/features/3-12/rspec-mocks/verifying-doubles/
 
-      # You should not use verifying doubles for unit testings. Unit testing relies 
+      # You should not use verifying doubles for unit testings. Unit testing relies
       # on using doubles to test the object in isolation (i.e., not dependent on any
-      # other object). One important concept to understand is that the BinarySearch 
+      # other object). One important concept to understand is that the BinarySearch
       # or FindNumber class doesn't care if it is given an actual random_number class
-      # object. It only cares that it is given an object that can respond to certain 
+      # object. It only cares that it is given an object that can respond to certain
       # methods. This concept is called polymorphism.
       # https://www.geeksforgeeks.org/polymorphism-in-ruby/
 
