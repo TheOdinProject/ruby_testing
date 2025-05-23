@@ -8,7 +8,7 @@ require_relative '../lib/12_magic_seven'
 
 # Before learning any more complexities of testing, let's take a look at a
 # standard testing pattern: Arrange, Act, and Assert.
-# https://youtu.be/sCthIEOaMI8
+# https://youtu.be/f8gjbPLFnqU
 
 # 1. Arrange -> set up the test (examples: initializing objects, let
 #               variables, updating values of instance variables).
@@ -24,7 +24,7 @@ require_relative '../lib/12_magic_seven'
 # repetition is necessary in order for them to be easy to read. If you are using
 # rubocop, you can disable specific (or all) cops for certain files (or
 # directories) by adding a .rubocop.yml file.
-# https://docs.rubocop.org/rubocop/0.88/configuration.html#includingexcluding-files
+# https://docs.rubocop.org/rubocop/configuration.html#includingexcluding-files
 
 # When you start working on a existing code base, you will often become familiar
 # with the code by reading the tests.
