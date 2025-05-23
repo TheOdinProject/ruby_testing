@@ -5,7 +5,7 @@
 # a different file.
 
 # The file order to complete this lesson:
-# 1. Familarize yourself with the class in lib/10_drink.rb
+# 1. Familiarize yourself with the class in lib/10_drink.rb
 # 2. Complete spec/10_drink_spec.rb
 
 # If you are using VS Code, you can split the screen to see both files at
