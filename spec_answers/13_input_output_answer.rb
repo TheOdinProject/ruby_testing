@@ -188,7 +188,7 @@ describe NumberGame do
     end
   end
 
-  # It is unneccessary to write tests for methods that only contain puts
+  # It is unnecessary to write tests for methods that only contain puts
   # statements, like #final_message. Puts is a basic part of the standard
   # ruby library & is already well tested. Plus, most 'real world
   # applications' don't even output like this except to loggers.
