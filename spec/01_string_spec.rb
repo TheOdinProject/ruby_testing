@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
+# NOTE: If you get a Ruby version error, it's recommended to [update your ruby installation](https://www.theodinproject.com/lessons/ruby-installing-ruby#update-ruby).
+# Alternatively, you can [change the local ruby version](https://www.theodinproject.com/lessons/ruby-installing-ruby#set-local-and-global-ruby-version)
+# to your installed version if your version is not too behind from output of `rbenv local`.
+# (to check your installed version: `ruby -v`)
+
 describe String do
   # Let creates a helper method with a memoized value that is cached for the
   # same example but not across different examples. Let is lazy-evaluated;

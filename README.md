@@ -14,6 +14,9 @@ These lessons cover many topics, but it does not cover everything that RSpec is 
 ## Set-Up
 Run `rbenv versions` to confirm that you have the same Ruby version installed as the one indicated in the `.ruby-version` file. If you do not have this version installed, please refer back to these [instructions](https://www.theodinproject.com/lessons/ruby-installing-ruby) to install it.
 
+> [!NOTE]
+> If you get a Ruby version error, it's recommended to [update your ruby installation](https://www.theodinproject.com/lessons/ruby-installing-ruby#update-ruby). Alternatively, you can [change the local ruby version](https://www.theodinproject.com/lessons/ruby-installing-ruby#set-local-and-global-ruby-version) to your installed version if your version is not too behind from output of `rbenv local`. (to check your installed version: `ruby -v`)
+
 Run `bundle install` from the root directory.
 
 ## How to use this playground
