@@ -1,3 +1,6 @@
+plugins:
+  - "rubocop-rspec"
+
 AllCops:
   Exclude:
     - 'Gemfile'
@@ -11,4 +14,3 @@ Layout/LineLength:
   Exclude:
     - 'spec/*'
     - 'spec_answers/*'
-  
