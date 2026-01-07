@@ -14,3 +14,10 @@ Layout/LineLength:
   Exclude:
     - 'spec/*'
     - 'spec_answers/*'
+Lint/EmptyBlock:
+  Exclude:
+    - 'spec/*'
+
+RSpec:
+  Exclude:
+    - 'spec/*'
