@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+results = Dir['spec_answers/*'].map do |spec_answer|
+  puts "running tests for #{spec_answer}"
+  system "bundle exec rspec #{spec_answer} --format progress"
+end
+
+if results.all?
+  puts 'All tests are passing!'
+else
+  puts 'Some tests are failing oh no!'
+end
