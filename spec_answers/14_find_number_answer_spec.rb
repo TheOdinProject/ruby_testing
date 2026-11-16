@@ -150,7 +150,7 @@ describe FindNumber do
       subject(:game_mid) { described_class.new(0, 9, number_mid, 4) }
 
       it 'is not game over' do
-        expect(game_mid).to_not be_game_over
+        expect(game_mid).not_to be_game_over
       end
     end
   end

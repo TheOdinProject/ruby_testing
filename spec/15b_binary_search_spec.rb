@@ -100,7 +100,7 @@ describe BinarySearch do
       subject(:mid_game) { described_class.new(0, 9, mid_number, 4) }
 
       it 'is not game over' do
-        expect(mid_game).to_not be_game_over
+        expect(mid_game).not_to be_game_over
       end
     end
   end

@@ -36,7 +36,7 @@ describe Drink do
       subject(:juice_drink) { described_class.new('juice', 8) }
 
       it 'is not full' do
-        expect(juice_drink).to_not be_full
+        expect(juice_drink).not_to be_full
       end
     end
   end

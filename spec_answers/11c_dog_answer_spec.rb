@@ -32,7 +32,7 @@ describe Dog do
   end
 
   it 'is not barking' do
-    expect(ollie).to_not be_barking
+    expect(ollie).not_to be_barking
   end
 
   it 'is sleeping' do

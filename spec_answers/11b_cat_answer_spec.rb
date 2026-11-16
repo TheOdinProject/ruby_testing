@@ -34,7 +34,7 @@ describe Cat do
   end
 
   it 'is not hungry' do
-    expect(lucy).to_not be_hungry
+    expect(lucy).not_to be_hungry
   end
 
   it 'is hiding' do
